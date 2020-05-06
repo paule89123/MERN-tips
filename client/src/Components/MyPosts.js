@@ -12,7 +12,7 @@ function MyPosts(props) {
 
         let JWT = getJwt()
 
-		fetch(`https://fullstackapp06may2020.herokuapp.com/api/posts/getPostByJWT?JWT=${JWT}`)
+		fetch(`https://merntips.herokuapp.com/api/posts/getPostByJWT?JWT=${JWT}`)
         .then(res => { 
             if (res.ok) {
                 setErrorMessage("")
