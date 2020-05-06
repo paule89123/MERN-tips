@@ -72,7 +72,7 @@ function Navbar(props) {
 					{props.location === "about" && !props.loggedIn &&
 						<div style={linksContainer}>
 							<div style={activeLinkStyle}><Link to="/about">ABOUT</Link></div>
-				            <div style={inactiveLinkStyle}><Link to="/register">CONTRIBUTE</Link></div>
+				            <div style={inactiveLinkStyle}><Link to="/register">REGISTER</Link></div>
 				            <div style={loginLinkStyle}><Link style={{color: "rgb(16,16,22)"}} to="/login">LOGIN</Link></div>
 			            </div>
 			        }
@@ -80,7 +80,7 @@ function Navbar(props) {
 			        {props.location === "register" && !props.loggedIn &&
 				        <div style={linksContainer}>
 							<div style={inactiveLinkStyle}><Link to="/about">ABOUT</Link></div>
-				            <div style={activeLinkStyle}><Link to="/register">CONTRIBUTE</Link></div>
+				            <div style={activeLinkStyle}><Link to="/register">REGISTER</Link></div>
 				            <div style={loginLinkStyle}><Link style={{color: "rgb(16,16,22)"}} to="/login">LOGIN</Link></div>
 			            </div>
 			        }
@@ -88,7 +88,7 @@ function Navbar(props) {
 			        {props.location !== "about" && props.location !== "register" && !props.loggedIn &&
 				        <div style={linksContainer}>
 							<div style={inactiveLinkStyle}><Link to="/about">ABOUT</Link></div>
-				            <div style={inactiveLinkStyle}><Link to="/register">CONTRIBUTE</Link></div>
+				            <div style={inactiveLinkStyle}><Link to="/register">REGISTER</Link></div>
 				            <div style={loginLinkStyle}><Link style={{color: "rgb(16,16,22)"}} to="/login">LOGIN</Link></div>
 			            </div>
 			        }
@@ -98,7 +98,7 @@ function Navbar(props) {
 					{props.location === "about" && props.loggedIn &&
 						<div style={linksContainer}>
 							<div style={activeLinkStyle}><Link to="/about">ABOUT</Link></div>
-				            <div style={inactiveLinkStyle}><Link to="/register">CONTRIBUTE</Link></div>
+				            <div style={inactiveLinkStyle}><Link to="/register">REGISTER</Link></div>
 				            <div onClick={props.logout} style={loginLinkStyle}>LOGOUT</div>
 			            </div>
 			        }
@@ -106,7 +106,7 @@ function Navbar(props) {
 			        {props.location === "register" && props.loggedIn &&
 				        <div style={linksContainer}>
 							<div style={inactiveLinkStyle}><Link to="/about">ABOUT</Link></div>
-				            <div style={activeLinkStyle}><Link to="/register">CONTRIBUTE</Link></div>
+				            <div style={activeLinkStyle}><Link to="/register">REGISTER</Link></div>
 				            <div onClick={props.logout} style={loginLinkStyle}>LOGOUT</div>
 			            </div>
 			        }
@@ -114,7 +114,7 @@ function Navbar(props) {
 			        {props.location !== "about" && props.location !== "register" && props.loggedIn &&
 				        <div style={linksContainer}>
 							<div style={inactiveLinkStyle}><Link to="/about">ABOUT</Link></div>
-				            <div style={inactiveLinkStyle}><Link to="/register">CONTRIBUTE</Link></div>
+				            <div style={inactiveLinkStyle}><Link to="/register">REGISTER</Link></div>
 				            <div onClick={props.logout} style={loginLinkStyle}>LOGOUT</div>
 			            </div>
 			        }
@@ -128,7 +128,7 @@ function Navbar(props) {
 	        {props.menuActive && !props.loggedIn &&
 		        <div className="mobile-links" >
 					<div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/about">ABOUT</Link></div>
-		            <div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/register">CONTRIBUTE</Link></div>
+		            <div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/register">REGISTER</Link></div>
 		            <div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/login">LOGIN</Link></div>
 	            </div>
 	    	}
@@ -136,7 +136,7 @@ function Navbar(props) {
 	    	{props.menuActive && props.loggedIn &&
 		        <div className="mobile-links">
 					<div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/about">ABOUT</Link></div>
-		            <div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/register">CONTRIBUTE</Link></div>
+		            <div onClick={() => props.setMenuActive(false)} className="mobile-link"><Link to="/register">REGISTER</Link></div>
 		            <div className="mobile-link" onClick={props.logout} style={{cursor: "pointer"}}>LOGOUT</div>
 	            </div>
 	    	}
