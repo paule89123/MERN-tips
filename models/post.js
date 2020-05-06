@@ -23,6 +23,13 @@ const postSchema = new mongoose.Schema({
 		minlength: 1,
 		maxlength: 20000
 	},
+	name: {
+		type: String,
+		required: true,
+		trim: true,
+		minlength: 1,
+		maxlength: 200
+	},
 	article: {
 		type: String,
 		required: true,
