@@ -23,13 +23,6 @@ const postSchema = new mongoose.Schema({
 		minlength: 1,
 		maxlength: 20000
 	},
-	name: {
-		type: String,
-		required: true,
-		trim: true,
-		minlength: 1,
-		maxlength: 200
-	},
 	article: {
 		type: String,
 		required: true,
@@ -46,7 +39,6 @@ function validatePost(post) {
 		title: Joi.string().min(1).max(20000).required(),
 		subtitle: Joi.string().min(1).max(20000).required(),
 		category: Joi.string().min(1).max(20000).required(),
-		name: Joi.string().min(1).max(200).required(),
 		article: Joi.string().min(3).max(90000).required(),
 	}
 	return Joi.validate(post, schema)
