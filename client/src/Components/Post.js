@@ -53,7 +53,8 @@ let articleStyle = {
 	fontSize: "16px",
 	fontFamily: "Work Sans",
 	fontWeight: "400",
-	color: "rgb(212,220,225)"
+	color: "rgb(212,220,225)",
+	whiteSpace: "pre-wrap"
 }
 
 function Post(props) {
