@@ -25,7 +25,7 @@ function DetailedPostPage(props) {
 
         window.scrollTo(0, 0)
 
-		fetch(`https://merntips.herokuapp.com/api/posts/getProductById?id=${postId}`)
+		fetch(`https://merntips.herokuapp.com/api/posts/getPostById?id=${postId}`)
         .then(res => { 
             if (res.ok) {
             	setErrorMessage("")
