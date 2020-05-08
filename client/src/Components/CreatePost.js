@@ -51,7 +51,7 @@ function CreatePost(props) {
         fetch('https://merntips.herokuapp.com/api/posts', options)
             .then(res => {
                 if (res.ok) {
-                    alert("Your article was successfully submitted")
+                    alert("Your post was successfully submitted")
                     history.push('/')
                 } else {
                     alert("There was an error. Please try submitting your post again")
