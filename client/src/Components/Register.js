@@ -87,8 +87,6 @@ function Register(props) {
                     <div style={{fontSize: "20px"}}>You are currently logged in as:</div>
                     <div style={{fontSize: "32px"}}>{props.name}</div>
                     <div style={{fontSize: "20px", fontWeight: "400", color: "rgb(157,157,172)"}}>{props.email}</div>
-                    <br /><br />
-                    <div style={{fontWeight: "500"}}>If you would like to contribute a post, click 'Create Post' in the sidebar.</div>
                 </div>
             }
 

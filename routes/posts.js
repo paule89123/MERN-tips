@@ -52,9 +52,8 @@ router.post('/getAll', (req, res) => {
 })
 
 // GETTING A SPECIFIC POST
-router.get('/getProductById', (req, res) => {
+router.get('/getPostById', (req, res) => {
 
-	let type = req.query.type
 	let postId = req.query.id
 
 try {
