@@ -14,7 +14,7 @@ let detailedPostStyle = {
 }
 
 let titleStyle = {
-	fontSize: "32px",
+	fontSize: "28px",
 	lineHeight: "1.04",
 	// marginBottom: "2px",
 	color: "rgb(235,235,255)"
@@ -28,7 +28,7 @@ let detailedTitleStyle = {
 }
 
 let subtitleStyle = {
-	fontSize: "16px",
+	fontSize: "14px",
 	lineHeight: "20px",
 	fontFamily: "Work Sans",
 	fontWeight: "400",
